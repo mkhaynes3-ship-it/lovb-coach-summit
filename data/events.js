@@ -63,14 +63,10 @@ window.SUMMIT.EVENTS = [
       {
         date: "2026-12-15", // Tuesday — Arrival Day
         items: [
-          { start: "12:00", timeLabel: "Arrival day", type: "logistics", icon: "plane",
-            title: "Arrive + check in",
-            location: "San Antonio Marriott Rivercenter",
-            description: "Settle into the hotel, then head down for registration." },
-          { start: "14:00", end: "17:00", type: "social",
-            title: "Cocktail Hour + Registration",
+          { start: "14:00", end: "17:00", type: "social", icon: "people",
+            title: "Check-In + Registration / Cocktail Hour",
             location: "The LDR & Grotto (River Level)",
-            description: "Register and meet the group. Food + drinks are covered from here through Thursday lunch." },
+            description: "Check in, register, and meet the group. Food + drinks are covered from here through Thursday lunch." },
           { start: "18:00", end: "21:00", type: "special",
             title: "Impact Awards Banquet",
             location: "Hemisfair Ballroom C1",
@@ -187,19 +183,28 @@ window.SUMMIT.EVENTS = [
   },
 
   /* ======================================================================
-     LOVB JUNIOR COACH SUMMIT — December 18–20, 2026
+     LOVB JUNIOR COACH SUMMIT — December 17–20, 2026
      (Separate event. Do not mix these items into the Coach Summit above.)
      ====================================================================== */
   {
     id: "junior",
     name: "LOVB Junior Coach Summit",
     shortName: "Junior Coach Summit",
-    dateRange: "December 18–20, 2026",
-    shortDates: "Dec 18–20",
+    dateRange: "December 17–20, 2026",
+    shortDates: "Dec 17–20",
     logo: "assets/logos/junior-summit-pink.png",
     days: [
       {
-        date: "2026-12-18", // Friday — Junior Summit starts
+        date: "2026-12-17", // Thursday — Arrival Day
+        items: [
+          { start: "12:00", timeLabel: "Arrival day", type: "logistics", icon: "plane",
+            title: "Arrive + check in",
+            location: "San Antonio Marriott Rivercenter",
+            description: "Get settled. Programming starts Friday morning." }
+        ]
+      },
+      {
+        date: "2026-12-18", // Friday — Junior Summit programming starts
         items: [
           { start: "09:00", end: "09:15", type: "meal", title: "Breakfast" },
           { start: "09:30", end: "10:30", type: "education",

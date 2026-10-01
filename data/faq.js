@@ -26,15 +26,15 @@ window.SUMMIT.FAQ = [
       {
         q: "When should I arrive?",
         answer: {
-          coach: "Tuesday, December 15. Registration and cocktail hour run 2–5 PM, followed by the Impact Awards Banquet at 6 PM.",
-          junior: "Be in San Antonio before Friday, December 18. Breakfast starts at 9 AM. Final arrival guidance coming soon."
+          coach: "Tuesday, December 15. Check-in, registration and cocktail hour run 2–5 PM, followed by the Impact Awards Banquet 6–9 PM.",
+          junior: "Thursday, December 17 is arrival day. Programming starts Friday with breakfast at 9 AM."
         },
         tbc: ["junior"]
       },
       {
         q: "Where and when do I check in?",
         answer: {
-          coach: "Check into the San Antonio Marriott Rivercenter, then register at cocktail hour: Tuesday, 2–5 PM in The LDR & Grotto (River Level).",
+          coach: "Tuesday, 2–5 PM at The LDR & Grotto (River Level) at the San Antonio Marriott Rivercenter. Check-in, registration and cocktail hour all happen together.",
           junior: "Junior Coach Summit check-in details coming soon."
         },
         tbc: ["junior"]

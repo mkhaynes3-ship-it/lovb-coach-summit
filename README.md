@@ -44,8 +44,8 @@ manifest.webmanifest     lets people "Add to Home Screen" like an app
 ```
 
 ## After publishing changes
-The pages load files as `styles.css?v=7`, `events.js?v=7`, etc. When you publish an update, bump that number
-(`v=8`) in both `index.html` and `faq.html` so phones don't keep showing an old cached schedule.
+The pages load files as `styles.css?v=8`, `events.js?v=8`, etc. When you publish an update, bump that number
+(`v=9`) in both `index.html` and `faq.html` so phones don't keep showing an old cached schedule.
 
 ## Live site
 - **https://lovbcoachsummit.com** — hosted free on GitHub Pages from
