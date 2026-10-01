@@ -55,16 +55,20 @@
     star: stroke('<path d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1-4.4-4.3 6.1-.9z"/>'),
     people: stroke('<circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.4"/><path d="M3.5 19c.6-3.2 2.8-5 5.5-5s4.9 1.8 5.5 5M15 14.3c2.6-.4 4.8 1.2 5.5 4.2"/>'),
     plane: stroke('<path d="M10.5 13.5 3 11l1.5-1.5 8 1 4-4.5c1-1 2.6-1.2 3.3-.5s.5 2.3-.5 3.3l-4.5 4 1 8L14.3 22l-2.5-7.5L8 18v2.5L6.5 22 5 19l-3-1.5L3.5 16H6z"/>'),
+    food: stroke('<path d="M7 3v7M5 3v4.5a2 2 0 0 0 4 0V3M7 10v11M18 3c-2.2 0-3.5 2.3-3.5 5.5V13H18v8"/>'),
+    camera: stroke('<rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8.5 7 10 4.5h4L15.5 7"/><circle cx="12" cy="13.5" r="3.5"/>'),
     mic: stroke('<rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5.5 11a6.5 6.5 0 0 0 13 0M12 17.5V21"/>'),
     pin: '<svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>',
     arrow: stroke('<path d="M7 17 17 7M9 7h8v8"/>')
   };
   const TYPE_ICON = {
     session: "clock", court: "court", education: "notebook",
-    social: "glass", special: "star", logistics: "people"
+    social: "glass", special: "star", logistics: "people",
+    meal: "food", match: "court"
   };
   const TYPE_LABELS = {
     session: "Session", court: "On-Court", education: "Educational",
+    meal: "Food", match: "Match",
     social: "Networking", special: "Event", logistics: "Logistics"
   };
 
@@ -149,7 +153,7 @@
           ${item.tracks.map((t) => `
             <li class="track">
               ${LocationLabel(t.location)}
-              <p class="track__title">${esc(t.title)}</p>
+              ${t.title ? `<p class="track__title">${esc(t.title)}</p>` : ""}
               ${SpeakerInfo(t.speaker)}
               ${t.description ? `<p class="card__desc">${esc(t.description)}</p>` : ""}
             </li>`).join("")}
@@ -160,7 +164,7 @@
       <li class="card ${status ? "is-" + status : ""}">
         <span class="card__icon">${ICONS[iconName] || ICONS.clock}</span>
         <div class="card__body">
-          <p class="card__time">${fmtRange(item.start, item.end)}${nowBadge}</p>
+          <p class="card__time">${item.timeLabel ? esc(item.timeLabel) : fmtRange(item.start, item.end)}${nowBadge}</p>
           <h3 class="card__title">${esc(item.title)}</h3>
           ${item.description ? `<p class="card__desc">${esc(item.description)}</p>` : ""}
           ${detail}
@@ -182,7 +186,7 @@
         <div class="faq__a">
           <p>${esc(answer)}</p>
           ${link}
-          ${tbcTag(question.tbc, "Details coming soon")}
+          ${tbcTag(Array.isArray(question.tbc) ? question.tbc.includes(eventId) : question.tbc, "Details coming soon")}
         </div>
       </details>`;
   }

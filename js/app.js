@@ -32,6 +32,7 @@
   function itemStatus(item, date, now) {
     if (date < now.date) return "past";
     if (date > now.date) return "";
+    if (item.timeLabel) return "";   // "Morning", "All day", etc. never flagged as now
     const start = toMin(item.start);
     const end = item.end ? toMin(item.end) : start + 1;
     if (now.minutes >= end) return "past";
@@ -152,9 +153,13 @@
   function renderFaq() {
     const event = findEvent(state.eventId);
     $("#faq-for").textContent = `Showing answers for ${event.name}`;
-    $("#faq-cats").innerHTML = S.FAQ.map((c) =>
+    // Only questions meant for this Summit (no `events` list = both).
+    const cats = S.FAQ
+      .map((c) => ({ ...c, questions: c.questions.filter((q) => !q.events || q.events.includes(state.eventId)) }))
+      .filter((c) => c.questions.length);
+    $("#faq-cats").innerHTML = cats.map((c) =>
       `<a class="chip" href="#cat-${ui.esc(c.id)}">${ui.esc(c.label)}</a>`).join("");
-    $("#faq-list").innerHTML = S.FAQ.map((c, i) => `
+    $("#faq-list").innerHTML = cats.map((c, i) => `
       <section class="faq-cat" id="cat-${ui.esc(c.id)}">
         <h2 class="faq-cat__title"><span class="num">${i + 1}</span>${ui.esc(c.label)}</h2>
         ${c.questions.map((q) => ui.FaqAccordion(q, state.eventId)).join("")}

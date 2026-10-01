@@ -227,6 +227,7 @@ svg { width: 1em; height: 1em; flex: none; }
 }
 .track .loc { font-size: 15px; }
 .track__title { font-size: 16px; font-weight: 600; line-height: 1.25; }
+.track .speaker { font-size: 16px; font-weight: 600; }
 
 /* States */
 .card.is-past > * { opacity: .45; }
