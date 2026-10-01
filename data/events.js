@@ -97,8 +97,8 @@ window.SUMMIT.EVENTS = [
             description: "Welcome. All attendees." },
           { start: "10:00", end: "10:50", type: "education", title: "Session 2",
             tracks: [
-              { location: "Room 212A", speaker: "Adam Rollman" },
-              { location: "Room 212B", speaker: "Melissa Wolter" }
+              { location: "Room 212A" },
+              { location: "Room 212B" }
             ] },
           { start: "11:00", end: "11:50", type: "meal",
             title: "Chase Lunch & Learn",
@@ -110,29 +110,29 @@ window.SUMMIT.EVENTS = [
             description: "Walk over from the convention center." },
           { start: "14:00", end: "14:50", type: "education", title: "Session 3",
             tracks: [
-              { location: "Room 212A", speaker: "Ben Bahr" },
-              { location: "Room 212B", speaker: "Steve Nowicki" }
+              { location: "Room 212A" },
+              { location: "Room 212B" }
             ] },
           { start: "15:00", end: "15:50", type: "court", title: "Session 4",
             tracks: [
-              { location: "Hemisfair Ballroom C1", speaker: "Glenna Bianchin, Melissa Boice, Joy Fuerbringer" },
-              { location: "Room 212A", speaker: "Nicolas Szerszen" },
-              { location: "Hall 3 · Court 1", speaker: "Pro coach TBA" },
-              { location: "Hall 3 · Court 2", speaker: "Carlos Moreno" },
-              { location: "Hall 3 · Court 3", speaker: "Genny Volpe" }
-            ], tbc: true },
+              { location: "Hemisfair Ballroom C1" },
+              { location: "Room 212A" },
+              { location: "Hall 3 · Court 1" },
+              { location: "Hall 3 · Court 2" },
+              { location: "Hall 3 · Court 3" }
+            ] },
           { start: "16:00", end: "16:50", type: "court", title: "Session 5",
             tracks: [
-              { location: "Hemisfair Ballroom C1", speaker: "Dr. Brooke Rundle" },
-              { location: "Room 212A", speaker: "Texas State Staff" },
-              { location: "Hall 3 · Court 1", speaker: "Dustin Watten" }
+              { location: "Hemisfair Ballroom C1" },
+              { location: "Room 212A" },
+              { location: "Hall 3 · Court 1" }
             ] },
           { start: "17:00", end: "17:50", type: "court", title: "Session 6",
             tracks: [
-              { location: "Room 212A", speaker: "Amir Lugo-Rodriguez" },
-              { location: "Room 212B", speaker: "Gabriella \"Ella\" Dooley" },
-              { location: "Hall 3 · Court 1", speaker: "Pro coach TBA" }
-            ], tbc: true },
+              { location: "Room 212A" },
+              { location: "Room 212B" },
+              { location: "Hall 3 · Court 1" }
+            ] },
           { start: "19:00", end: "21:00", type: "match",
             title: "Pro Match: LOVB Austin vs. LOVB Nebraska",
             location: "Frost Bank Arena",
@@ -154,22 +154,20 @@ window.SUMMIT.EVENTS = [
             description: "All attendees." },
           { start: "10:00", end: "10:50", type: "court", title: "Session 7",
             tracks: [
-              { location: "Room 212A", speaker: "Jimmy Lundgren" },
-              { location: "AVCA Hall 4 Court", speaker: "Alyssa D'Errico" },
-              { location: "AVCA Beach Court", speaker: "Hudson Bates" }
+              { location: "Room 212A" },
+              { location: "AVCA Hall 4 Court" },
+              { location: "AVCA Beach Court" }
             ] },
           { start: "11:00", end: "11:50", type: "education", title: "Session 8",
-            speaker: "Dustin Watten",
             location: "Hemisfair Ballroom C1" },
           { start: "12:00", end: "12:50", type: "meal",
             title: "Lunch",
             location: "Hemisfair Ballroom C1" },
           { start: "13:00", end: "13:50", type: "court", title: "Session 9",
             tracks: [
-              { location: "Hemisfair Ballroom C1", title: "Moms in Coaching Panel",
-                speaker: "Morgan Thomas, Terri Purichia, Scarlett Molina, Shelby Sawyer, Genny Volpe" },
-              { location: "Room 212A", speaker: "Kristen Kelsay" },
-              { location: "AVCA Hall 4 Court", speaker: "TJ Sanders" }
+              { location: "Hemisfair Ballroom C1", title: "Moms in Coaching Panel" },
+              { location: "Room 212A" },
+              { location: "AVCA Hall 4 Court" }
             ] },
           { start: "14:00", end: "15:00", type: "special",
             title: "Closing Session",
@@ -223,13 +221,10 @@ window.SUMMIT.EVENTS = [
           { start: "14:30", end: "15:30", type: "education", title: "AVCA Education Sessions",
             description: "Stick with your host group." },
           { start: "15:45", end: "16:45", type: "education", title: "LOVB Classroom Session",
-            speaker: "Morgan Thomas",
             location: "Room 212A" },
           { start: "17:00", end: "17:50", type: "education", title: "LOVB Classroom Session",
-            speaker: "Helen Lin",
             location: "Room 212A" },
           { start: "18:00", end: "18:50", type: "education", title: "LOVB Classroom Session",
-            speaker: "Speaker TBA",
             location: "Room 212A / 212B", tbc: true },
           { start: "19:15", end: "21:15", type: "meal",
             title: "Small Group Dinner",
@@ -258,8 +253,7 @@ window.SUMMIT.EVENTS = [
           { start: "15:30", end: "16:30", type: "education", title: "AVCA Education Sessions",
             description: "Stick with your host group." },
           { start: "16:45", end: "18:00", type: "education", title: "LOVB Classroom Panel",
-            speaker: "Molly Alvey + more TBA",
-            location: "Room 212A", tbc: true },
+            location: "Room 212A" },
           { start: "18:15", end: "20:30", type: "meal",
             title: "Small Group Dinner with Your LOVB Host",
             description: "Dine-around dinner with your small group and host." }
