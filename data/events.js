@@ -106,7 +106,8 @@ window.SUMMIT.EVENTS = [
             description: "Lunch with a presentation from Chase. All attendees." },
           { start: "12:00", end: "13:45", type: "match",
             title: "Team Practices",
-            location: "Alamodome" },
+            location: "Alamodome",
+            description: "Walk over from the convention center." },
           { start: "14:00", end: "14:50", type: "education", title: "Session 3",
             tracks: [
               { location: "Room 212A", speaker: "Ben Bahr" },
@@ -114,7 +115,7 @@ window.SUMMIT.EVENTS = [
             ] },
           { start: "15:00", end: "15:50", type: "court", title: "Session 4",
             tracks: [
-              { location: "Hemisfair Ballroom C1", speaker: "Glenna Bianchin, Melissa Boice + more TBA" },
+              { location: "Hemisfair Ballroom C1", speaker: "Glenna Bianchin, Melissa Boice, Joy Fuerbringer" },
               { location: "Room 212A", speaker: "Nicolas Szerszen" },
               { location: "Hall 3 · Court 1", speaker: "Pro coach TBA" },
               { location: "Hall 3 · Court 2", speaker: "Carlos Moreno" },
@@ -132,22 +133,21 @@ window.SUMMIT.EVENTS = [
               { location: "Room 212B", speaker: "Gabriella \"Ella\" Dooley" },
               { location: "Hall 3 · Court 1", speaker: "Pro coach TBA" }
             ], tbc: true },
-          { start: "18:00", type: "meal",
-            title: "Dinner",
-            location: "Location TBA", tbc: true },
           { start: "19:00", end: "21:00", type: "match",
             title: "Pro Match: LOVB Austin vs. LOVB Nebraska",
-            location: "Frost Bank Arena" },
+            location: "Frost Bank Arena",
+            description: "Dinner is snacks + drinks at the game. Transportation details coming soon." },
           { start: "20:00", end: "22:15", type: "social",
-            title: "AVCA Convention Kick-Off Party + Game Night" }
+            title: "AVCA Convention Kick-Off Party + Game Night",
+            location: "Location TBA", tbc: true }
         ]
       },
       {
         date: "2026-12-17", // Thursday
         items: [
           { start: "08:00", end: "09:00", type: "meal",
-            title: "AVCA Breakfast",
-            description: "Grab-and-go continental breakfast." },
+            title: "AVCA Breakfast Buffet",
+            location: "The LDR & Grotto (River Level)" },
           { start: "09:00", end: "09:50", type: "special",
             title: "Large Group Session",
             location: "Hemisfair Ballroom C1",
@@ -200,10 +200,10 @@ window.SUMMIT.EVENTS = [
       {
         date: "2026-12-17", // Thursday — Arrival Day
         items: [
-          { start: "12:00", timeLabel: "Arrival day", type: "logistics", icon: "plane",
-            title: "Arrive + check in",
-            location: "San Antonio Marriott Rivercenter",
-            description: "Get settled. Programming starts Friday morning." }
+          { start: "17:30", end: "21:00", type: "logistics", icon: "people",
+            title: "Arrival + Check-In",
+            location: "Marriott Rivercenter Lobby",
+            description: "Get settled and meet the crew. Programming starts Friday morning." }
         ]
       },
       {
@@ -214,10 +214,14 @@ window.SUMMIT.EVENTS = [
             title: "AVCA Convention 101",
             location: "Room 214CD",
             description: "What every first-time attendee needs to know." },
-          { start: "10:45", end: "11:45", type: "education", title: "AVCA Education Sessions" },
-          { start: "12:00", end: "13:00", type: "meal", title: "Lunch" },
-          { start: "13:15", end: "14:15", type: "education", title: "AVCA Education Sessions" },
-          { start: "14:30", end: "15:30", type: "education", title: "AVCA Education Sessions" },
+          { start: "10:45", end: "11:45", type: "education", title: "AVCA Education Sessions",
+            description: "Your LOVB host picks the sessions and takes your group." },
+          { start: "12:00", end: "13:00", type: "meal", title: "Lunch",
+            description: "With your host group." },
+          { start: "13:15", end: "14:15", type: "education", title: "AVCA Education Sessions",
+            description: "Stick with your host group." },
+          { start: "14:30", end: "15:30", type: "education", title: "AVCA Education Sessions",
+            description: "Stick with your host group." },
           { start: "15:45", end: "16:45", type: "education", title: "LOVB Classroom Session",
             speaker: "Morgan Thomas",
             location: "Room 212A" },
@@ -229,8 +233,8 @@ window.SUMMIT.EVENTS = [
             location: "Room 212A / 212B", tbc: true },
           { start: "19:15", end: "21:15", type: "meal",
             title: "Small Group Dinner",
-            description: "Dine-around dinner." },
-          { start: "21:00", type: "social",
+            description: "Get-to-know-you dinner with your small group. Just you and the other coaches!" },
+          { start: "21:00", timeLabel: "Evening · time TBA", type: "social",
             title: "adidas Party",
             location: "Location TBA", tbc: true }
         ]
@@ -241,18 +245,24 @@ window.SUMMIT.EVENTS = [
           { start: "08:30", end: "09:30", type: "meal",
             title: "AVCA Breakfast Buffet",
             location: "Hall 4" },
-          { start: "09:00", end: "10:00", type: "education", title: "AVCA Education Sessions" },
-          { start: "10:15", end: "11:15", type: "education", title: "AVCA Education Sessions" },
-          { start: "11:30", end: "12:30", type: "education", title: "AVCA Education Sessions" },
-          { start: "12:30", end: "14:00", type: "meal", title: "Lunch + Round Tables" },
-          { start: "14:15", end: "15:15", type: "education", title: "AVCA Education Sessions" },
-          { start: "15:30", end: "16:30", type: "education", title: "AVCA Education Sessions" },
+          { start: "09:00", end: "10:00", type: "education", title: "AVCA Education Sessions",
+            description: "Your LOVB host picks the sessions and takes your group." },
+          { start: "10:15", end: "11:15", type: "education", title: "AVCA Education Sessions",
+            description: "Stick with your host group." },
+          { start: "11:30", end: "12:30", type: "education", title: "AVCA Education Sessions",
+            description: "Stick with your host group." },
+          { start: "12:30", end: "14:00", type: "meal", title: "Lunch + Round Tables",
+            description: "With your host group." },
+          { start: "14:15", end: "15:15", type: "education", title: "AVCA Education Sessions",
+            description: "Stick with your host group." },
+          { start: "15:30", end: "16:30", type: "education", title: "AVCA Education Sessions",
+            description: "Stick with your host group." },
           { start: "16:45", end: "18:00", type: "education", title: "LOVB Classroom Panel",
             speaker: "Molly Alvey + more TBA",
             location: "Room 212A", tbc: true },
           { start: "18:15", end: "20:30", type: "meal",
-            title: "Small Group Dinner with a LOVB Team Member",
-            description: "Dine-around dinner." }
+            title: "Small Group Dinner with Your LOVB Host",
+            description: "Dine-around dinner with your small group and host." }
         ]
       },
       {
@@ -262,9 +272,10 @@ window.SUMMIT.EVENTS = [
             title: "Hotel check-out",
             description: "Check out and store your bags at the hotel." },
           { start: "09:00", end: "09:45", type: "meal", title: "Breakfast" },
-          { start: "10:00", end: "11:00", type: "education", title: "AVCA Education Sessions" },
+          { start: "10:00", end: "11:00", type: "education", title: "AVCA Education Sessions",
+            description: "Your LOVB host picks the sessions and takes your group." },
           { start: "11:15", end: "12:15", type: "special", title: "LOVB Closing Session",
-            location: "Location TBA", tbc: true },
+            location: "Room 216AB" },
           { start: "14:30", type: "match",
             title: "NCAA Championship Match",
             location: "Alamodome" }

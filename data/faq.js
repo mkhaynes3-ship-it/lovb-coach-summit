@@ -27,16 +27,15 @@ window.SUMMIT.FAQ = [
         q: "When should I arrive?",
         answer: {
           coach: "Tuesday, December 15. Check-in, registration and cocktail hour run 2–5 PM, followed by the Impact Awards Banquet 6–9 PM.",
-          junior: "Thursday, December 17 is arrival day. Programming starts Friday with breakfast at 9 AM."
+          junior: "Thursday, December 17. Check-in is 5:30–9 PM in the Marriott Rivercenter lobby. Programming starts Friday with breakfast at 9 AM."
         }
       },
       {
         q: "Where and when do I check in?",
         answer: {
           coach: "Tuesday, 2–5 PM at The LDR & Grotto on the convention center's River Level. Check-in, registration and cocktail hour all happen together.",
-          junior: "Junior Coach Summit check-in details coming soon."
-        },
-        tbc: ["junior"]
+          junior: "Thursday, December 17, 5:30–9 PM in the San Antonio Marriott Rivercenter lobby."
+        }
       },
       {
         q: "When does the Summit end?",
@@ -66,9 +65,20 @@ window.SUMMIT.FAQ = [
       {
         q: "Will food be provided?",
         answer: {
-          coach: "Yes. Food and drinks are covered from Tuesday's cocktail hour through Thursday lunch, including the Impact Awards dinner and Thursday's AVCA breakfast.",
-          junior: "Yes. Breakfast and lunch are on the schedule each day, plus small-group dine-around dinners Friday and Saturday."
+          coach: "Yes. Food and drinks are covered from Tuesday's cocktail hour through Thursday lunch, including the Impact Awards dinner, snacks + drinks at Wednesday's pro match, and Thursday's AVCA breakfast buffet.",
+          junior: "Yes. Breakfast and lunch are on the schedule each day, plus small-group dinners Friday and Saturday."
         }
+      },
+      {
+        q: "How do small groups work?",
+        events: ["junior"],
+        answer: "You'll be placed in a small group with a LOVB host. Your host picks your AVCA sessions and leads your group to sessions, lunches, and Saturday's dinner. Friday's dinner is just your group, a chance to get to know each other."
+      },
+      {
+        q: "What's included?",
+        events: ["junior"],
+        answer: "Full details coming soon, including AVCA memberships.",
+        tbc: true
       },
       {
         q: "What's included?",
