@@ -88,8 +88,10 @@ window.SUMMIT.FAQ = [
       },
       {
         q: "What should I wear?",
-        answer: "Dress guidance coming soon.",
-        tbc: true
+        answer: {
+          coach: "Sessions: casual coach wear. Think your matching adidas set or a sweatshirt. Comfortable and put-together, not business professional. Bring something nice for cocktail hour, and semi-formal attire for the Impact Awards Banquet.",
+          junior: "Casual coach wear. Think your matching adidas set or a sweatshirt. Comfortable and put-together, not business professional."
+        }
       }
     ]
   },
@@ -127,8 +129,8 @@ window.SUMMIT.FAQ = [
       },
       {
         q: "How do I get from the hotel to the convention center?",
-        answer: "Local transportation isn't covered. Directions and walking info coming soon.",
-        tbc: true
+        answer: "It's about a 3-minute walk. Head outside and enter the convention center at street level through the Lila Cockrell Theatre entrance.",
+        link: { href: "https://www.google.com/maps/search/?api=1&query=Lila+Cockrell+Theatre+San+Antonio+TX", text: "Pin: Lila Cockrell Theatre", external: true }
       }
     ]
   },
