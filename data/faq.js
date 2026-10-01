@@ -89,8 +89,8 @@ window.SUMMIT.FAQ = [
       {
         q: "What should I wear?",
         answer: {
-          coach: "Sessions: casual coach wear. Think your matching adidas set or a sweatshirt. Comfortable and put-together, not business professional. Bring something nice for cocktail hour, and semi-formal attire for the Impact Awards Banquet.",
-          junior: "Casual coach wear. Think your matching adidas set or a sweatshirt. Comfortable and put-together, not business professional."
+          coach: "Sessions: casual coach wear. Think what you'd wear to a tournament, like your matching adidas set or a sweatshirt. Comfortable and put-together, not business professional. Bring something nice for cocktail hour, and semi-formal attire for the Impact Awards Banquet.",
+          junior: "Sessions: casual coach wear. Think what you'd wear to a tournament, like your matching adidas set or a sweatshirt. Comfortable and put-together, not business professional. The adidas party is casual."
         }
       }
     ]
