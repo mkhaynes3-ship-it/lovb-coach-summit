@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en" data-event="coach">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#051243">
+  <meta name="description" content="Quick answers before you arrive in San Antonio for the LOVB Coach Summit and LOVB Junior Coach Summit.">
+  <title>FAQ · LOVB Coach Summit</title>
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32.png">
+  <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Coach Summit">
+  <meta property="og:title" content="LOVB Coach Summit + Junior Coach Summit">
+  <meta property="og:description" content="Schedule and FAQ · San Antonio, Texas · December 2026">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" media="print" onload="this.media='all'">
+  <script>
+    (function () { try {
+      var e = new URLSearchParams(location.search).get("event") || localStorage.getItem("summit-event");
+      if (e === "coach" || e === "junior") document.documentElement.dataset.event = e;
+    } catch (_) {} })();
+  </script>
+  <link rel="stylesheet" href="css/styles.css?v=6">
+</head>
+<body data-page="faq">
+  <a class="skip" href="#faq-list">Skip to questions</a>
+
+  <header class="nav">
+    <div class="wrap nav__inner">
+      <nav class="nav__links" aria-label="Main">
+        <a data-nav="index.html" href="index.html">Schedule</a>
+        <a data-nav="faq.html" href="faq.html" aria-current="page">FAQ</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero hero--faq">
+    <div class="hero__watermark" aria-hidden="true">FAQ</div>
+    <div class="wrap hero__inner">
+      <div id="event-switch"></div>
+      <div class="faq-hero">
+        <h1 class="faq-hero__title">Everything you<br><em>need to know</em></h1>
+        <p class="faq-hero__sub">Quick answers before you arrive in San Antonio.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="daybar daybar--chips">
+    <div class="wrap">
+      <nav class="chips" id="faq-cats" aria-label="FAQ categories"></nav>
+    </div>
+  </div>
+
+  <main class="wrap main main--faq" id="faq-list" tabindex="-1"></main>
+
+  <footer class="foot">
+    <div class="wrap">
+      <a class="foot__cta" data-nav="index.html" href="index.html">Back to the schedule</a>
+      <p id="faq-for"></p>
+    </div>
+  </footer>
+
+  <script src="data/events.js?v=6"></script>
+  <script src="data/faq.js?v=6"></script>
+  <script src="js/components.js?v=6"></script>
+  <script src="js/app.js?v=6"></script>
+  <script>
+    if ("serviceWorker" in navigator && location.protocol.startsWith("http")) {
+      navigator.serviceWorker.register("sw.js").catch(function () {});
+    }
+  </script>
+</body>
+</html>
