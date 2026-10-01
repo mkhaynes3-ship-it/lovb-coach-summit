@@ -26,8 +26,8 @@
    {
      start: "10:00", end: "10:50", type: "education", title: "Session 2",
      tracks: [
-       { location: "Room 212A", speaker: "Adam Rollman" },
-       { location: "Room 212B", speaker: "Melissa Wolter" }
+       { location: "Room 212A", speaker: "Speaker Name" },
+       { location: "Room 212B", speaker: "Speaker Name" }
      ]
    }
 
