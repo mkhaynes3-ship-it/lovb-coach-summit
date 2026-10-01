@@ -100,6 +100,7 @@
           <h1 class="hero__title">${esc(event.name)}</h1>
           <p class="hero__meta">${esc(event.dateRange)}</p>
           <p class="hero__venue">${ICONS.pin}<span>${esc(venue.name)}, ${esc(venue.city)}</span></p>
+          ${venue.floorPlan ? `<a class="hero__map" href="${esc(venue.floorPlan)}" target="_blank" rel="noopener">Venue map ${ICONS.arrow}</a>` : ""}
         </div>
         <img class="hero__logo" src="${esc(event.logo)}" alt="" width="520" height="489">
       </div>`;

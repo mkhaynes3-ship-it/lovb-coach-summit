@@ -45,7 +45,10 @@ window.SUMMIT.SHOW_TBC_TAGS = true;
 window.SUMMIT.VENUE = {
   name: "Henry B. González Convention Center",
   city: "San Antonio, Texas",
-  mapUrl: "https://www.google.com/maps/search/?api=1&query=Henry+B.+Gonzalez+Convention+Center+San+Antonio+TX"
+  mapUrl: "https://www.google.com/maps/search/?api=1&query=Henry+B.+Gonzalez+Convention+Center+San+Antonio+TX",
+  // Floor plan PDF. PLACEHOLDER: city's 2012 floor plans (no Hemisfair Ballroom / Halls 3–4).
+  // Swap in AVCA's 2026 convention map when available (same file name, or update the path).
+  floorPlan: "assets/maps/venue-map.pdf"
 };
 
 window.SUMMIT.EVENTS = [

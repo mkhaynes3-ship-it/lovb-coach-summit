@@ -136,6 +136,12 @@ svg { width: 1em; height: 1em; flex: none; }
   font-size: 14px; font-weight: 500; color: var(--ink-soft); line-height: 1.35;
 }
 .hero__venue svg { margin-top: 2px; color: var(--navy); }
+.hero__map {
+  display: inline-flex; align-items: center; gap: 4px; margin-top: 10px;
+  min-height: 40px; padding: 0 14px; border-radius: 4px;
+  background: var(--navy); color: var(--lime-bright);
+  font-size: 14px; font-weight: 600; text-decoration: none;
+}
 .hero__logo { width: 68px; height: auto; flex: none; }
 
 /* ==========================================================================

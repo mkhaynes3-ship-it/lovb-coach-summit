@@ -34,7 +34,7 @@ window.SUMMIT.FAQ = [
       {
         q: "Where and when do I check in?",
         answer: {
-          coach: "Tuesday, 2–5 PM at The LDR & Grotto (River Level) at the San Antonio Marriott Rivercenter. Check-in, registration and cocktail hour all happen together.",
+          coach: "Tuesday, 2–5 PM at The LDR & Grotto on the convention center's River Level. Check-in, registration and cocktail hour all happen together.",
           junior: "Junior Coach Summit check-in details coming soon."
         },
         tbc: ["junior"]
@@ -104,6 +104,11 @@ window.SUMMIT.FAQ = [
           junior: "San Antonio Marriott Rivercenter on the River Walk."
         },
         link: { href: "https://www.google.com/maps/search/?api=1&query=San+Antonio+Marriott+Rivercenter", text: "Open in Maps", external: true }
+      },
+      {
+        q: "How do I find my room?",
+        answer: "Every session lists its room or court in the schedule. Use the venue map to find it. Rooms 205–218 are on the Concourse Level; The LDR & Grotto are on the River Level.",
+        link: { href: "assets/maps/venue-map.pdf", text: "Open venue map", external: true }
       },
       {
         q: "Where is the convention center?",
