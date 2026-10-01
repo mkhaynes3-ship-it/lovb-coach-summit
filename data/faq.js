@@ -28,8 +28,7 @@ window.SUMMIT.FAQ = [
         answer: {
           coach: "Tuesday, December 15. Check-in, registration and cocktail hour run 2–5 PM, followed by the Impact Awards Banquet 6–9 PM.",
           junior: "Thursday, December 17 is arrival day. Programming starts Friday with breakfast at 9 AM."
-        },
-        tbc: ["junior"]
+        }
       },
       {
         q: "Where and when do I check in?",
