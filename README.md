@@ -46,3 +46,14 @@ manifest.webmanifest     lets people "Add to Home Screen" like an app
 ## After publishing changes
 The pages load files as `styles.css?v=6`, `events.js?v=6`, etc. When you publish an update, bump that number
 (`v=7`) in both `index.html` and `faq.html` so phones don't keep showing an old cached schedule.
+
+## Live site
+- **https://lovbcoachsummit.com** — hosted free on GitHub Pages from
+  [github.com/mkhaynes3-ship-it/lovb-coach-summit](https://github.com/mkhaynes3-ship-it/lovb-coach-summit).
+- Domain registered at Namecheap. DNS: four `A` records for `@` → 185.199.108–111.153, and `CNAME www` →
+  `mkhaynes3-ship-it.github.io`. Don't change these.
+
+### Updating the live site
+Easiest (no tools needed): open the file on github.com (e.g. `data/events.js`), click the ✏️ pencil, edit,
+then **Commit changes**. The site updates in about a minute.
+Remember to bump `?v=` in `index.html` and `faq.html` when you change CSS/JS/data.
